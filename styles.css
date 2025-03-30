@@ -5,35 +5,42 @@
     display: flex;
     justify-content: center; 
  }
- nav {
+ nav { 
+  }
 
- }
-#heading{
+#heading{ //left off on 22:21
 
 }
 .description{
     
 }
-nav > ul > li {
+nav > ul > li { 
+  }
 
-}
 .parent {
-    border: 3px solid #565264;
-    border-radius: 10px;
+    border: 2px solid #565264;
     background-color: #EABACB;
     padding: 70px;
-    margin: 20px auto;
+    margin: 100px auto;
     width: 80%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .child {
-    border: 3px solid #565264;
-    border-radius: 5px;
+    border: 1px solid #565264;
     background-color:#FAF7F5;
     padding: 15px;
     margin: 10px;
     width: 45%;
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+    
 }
