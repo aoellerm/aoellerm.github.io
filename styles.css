@@ -1,0 +1,39 @@
+ body {
+    background-color: #FAF7F5;
+ }
+ .logo-header {
+    display: flex;
+    justify-content: center; 
+ }
+ nav {
+
+ }
+#heading{
+
+}
+.description{
+    
+}
+nav > ul > li {
+
+}
+.parent {
+    border: 3px solid #565264;
+    border-radius: 10px;
+    background-color: #EABACB;
+    padding: 70px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.child {
+    border: 3px solid #565264;
+    border-radius: 5px;
+    background-color:#FAF7F5;
+    padding: 15px;
+    margin: 10px;
+    width: 45%;
+}
