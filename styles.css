@@ -2,10 +2,15 @@
     background-color: #FAF7F5;
  }
  .logo-header {
-    display: flex;
-    justify-content: center; 
+  background-color: #FAF7F5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 10px;
     margin-bottom: 100px;
+
+    display: flex;
+  justify-content: center;
  }
   #heading{ 
     font-size: 3em;
@@ -14,7 +19,7 @@
     background-color: #EABACB;
     text-align: center;
   }
-.description{
+.container1 {
   border: 2px solid #565264;
   padding: 20px;
   margin: 200px auto;
@@ -22,7 +27,6 @@
     
 }
 nav {
-  
   color: #565264;
   padding: 10px;
   text-align: center;
@@ -37,9 +41,9 @@ nav > ul > li {
   justify-content: center;
   list-style: none;
   text-decoration: none;
-    padding: 10px 15px;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    border-radius: 5px;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 5px;
   }
   nav > ul > li> a {
     color: inherit;
@@ -50,7 +54,7 @@ nav > ul > li {
     border-radius: 5px;
 }
 
-.parent {
+.container2 {
     border: 2px solid #565264;
     background-color: #EABACB;
     padding: 20px;
@@ -60,8 +64,9 @@ nav > ul > li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-.child {
+.child-div {
     border: 1px solid #565264;
     background-color:#FAF7F5;
     padding: 15px;
@@ -81,7 +86,9 @@ h1 {
   font-size: 3em;
   font-family: 'Abhaya Libre ExtraBold';
   color: #565264;
+  background-color: #EABACB;
   text-align: center;
+    
 }
 h2 {
   font-size: 1.5em;
@@ -97,11 +104,14 @@ h3 {
 }
 .gallery {
   display: grid; 
-  grid-template-columns: repeat(3, auto); 
+   grid-template-columns: repeat(3, auto); 
   grid-template-rows: repeat(2, auto); 
-  gap: 20px; 
+  grid-gap: 20px; 
   justify-content: center; /* Centers the grid horizontally */
   align-items: center; 
+  border: 2px solid #565264;
+  background-color:#FAF7F5;
+  padding: 15px;
 }
 
 .gallery img {
@@ -109,4 +119,33 @@ h3 {
   height: auto; 
   border-radius: 10px; 
   box-shadow: 2px 2px 6px #565264;
+}
+
+/* this part changes the appearance depending on screen size*/
+@media (max-width: 600px) {
+  .child-div {
+    width: 90%; /* make full width on small screens */
+  }
+  nav > ul > li {
+    font-size: 1.5em;
+  }
+
+  #heading {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: .7em;
+    text-align: center;
+  }
+  .gallery{
+    grid-template-columns: repeat(2, auto); 
+   grid-gap: 5px;
+   padding: 5px;
+  }
 }
