@@ -8,7 +8,6 @@
     z-index: 1000;
     padding: 10px;
     margin-bottom: 100px;
-
     display: flex;
   justify-content: center;
  }
@@ -17,41 +16,54 @@
     font-family: 'Abhaya Libre ExtraBold';
     color: #565264;
     background-color: #EABACB;
+    padding-bottom: margin-top -200px;
     text-align: center;
   }
-.container1 {
-  border: 2px solid #565264;
-  padding: 20px;
-  margin: 200px auto;
-  width: 80%;
-    
-}
+  .first-Image{
+    text-align: center;
+    margin-top: -100px;
+  }
+  .first-Image img{
+    display:block;
+    margin: 0;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    border:3px solid #706677;
+  }
 nav {
+  display: flex;
+  justify-content: center;
   color: #565264;
   padding: 10px;
-  text-align: center;
+  font-size: 2em;
+  font-family: 'Abhaya Libre ExtraBold';
+  margin-left: -40px;
 }
 nav > ul > li { 
   list-style-type: none;
-  margin: 0;
+  display: inline;
+  background-color: #FAF7F5;
   padding: 0;
-  display: flex;
-  font-size: 2em;
-  font-family: 'Abhaya Libre ExtraBold';
-  justify-content: center;
-  list-style: none;
-  text-decoration: none;
-  padding: 10px 15px;
+  margin: 0;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   border-radius: 5px;
   }
   nav > ul > li> a {
     color: inherit;
+    text-decoration: none;
   }
   nav > ul > li > a:hover {
     background-color: #565264; 
     color: #EABACB; 
-    border-radius: 5px;
+
+}
+.container1 {
+  border: 2px solid #565264;
+  padding: 20px;
+  margin: 100px auto;
+  width: 80%;
+    
 }
 
 .container2 {
@@ -86,7 +98,8 @@ h1 {
   font-size: 3em;
   font-family: 'Abhaya Libre ExtraBold';
   color: #565264;
-  background-color: #EABACB;
+  border: 2px solid #565264;
+  background-image: linear-gradient(#EABACB, #FAF7F5);
   text-align: center;
     
 }
@@ -110,7 +123,7 @@ h3 {
   justify-content: center; /* Centers the grid horizontally */
   align-items: center; 
   border: 2px solid #565264;
-  background-color:#FAF7F5;
+  background-image: linear-gradient(#EABACB, #FAF7F5);
   padding: 15px;
 }
 
@@ -127,11 +140,16 @@ h3 {
     width: 90%; /* make full width on small screens */
   }
   nav > ul > li {
-    font-size: 1.5em;
+    flex-direction: column;
+    font-size: .5em; 
+    text-align: center;
+    display: inline-flexbox;
   }
-
   #heading {
     font-size: 1.5em;
+  }
+  .first-Image img{
+    width: 150px;
   }
   h1 {
     font-size: 2em;
