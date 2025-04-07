@@ -142,10 +142,6 @@ h3 {
   transform: scale(1.03);
   transition: transform 0.2s ease-in-out;
 }
-.gallery img:hover {
-  transform: scale(1.03);
-  transition: transform 0.2s ease-in-out;
-}
 /* this part changes the appearance depending on screen size*/
 @media (max-width: 600px) {
   .child-div {
